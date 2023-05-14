@@ -1,8 +1,6 @@
 /* @file SavingsAccount.h
 *  @author Emily Louk
 *  Specification file for SavingsAccount class
-*  which declares data members, function prototypes,
-*  and includes method documentations.
 */
 
 class SavingsAccount{
@@ -14,44 +12,34 @@ private:
    
 public:
 
-   /** Deafult constructor: Creates a SavingsAccount and initializes
-   * its interestRate and balance to default values.
-   * Precondition: None.
-   * Postcondition: A savingsAccount with interestRate of 0 and 
-   * balance of 0 */
+   /**
+   * Postcondition: A savingsAccount with interestRate of 0.0 and 
+   * balance of 0.0 */
    SavingsAccount();
    
-   /** Constructor: Creates a SavingsAccount and initializes its
-   * interestRate and balance to user-specified values.
-   * @param i the interest rate to apply to the account
-   * @param b the balance to apply to the account
-   * Precondition: interestRate and balance have desireed values.
-   * Postcondition: A SavingsAccount of the desired interestRate and
-   * balance exists. */
+   /** Initializes a Savings Account with an interest rate
+	*	 and a balance.
+	*	@param i the interest rate to initialize with
+	*	@param b the balance to initialize with
+    */
    SavingsAccount(double i, double b);
    
    /** Gets the savings account's annual interest rate.
-   * Precondition: None.
-   * Postcondition: returns the annual interest rate of the account. 
    * @return the account's annual interest rate */
    double getInterestRate();
    
    /** Gets the savings account's balance.
-   * Precondition: None.
-   * Postcondition: returns the balance of the account.
    * @return the accounts balance */
    double getBalance();
    
    /** Sets the interestRate of the account.
    * @param i - the desired interestRate
-   * Precondition: interestRate is the desired rate.
-   * Postcondition: A SavingsAccount's interestRate is i */
+   */
    void setInterestRate(double i);
    
    /** Sets the balance of the account.
    * @param b - the desired balance
-   * Precondition: balance is the desired balance.
-   * Postcondition: A SavingsAccount's balance is b */
+   */
    void setBalance(double b);
    
    /** Subtracts the amount of a withdrawal from
